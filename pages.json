@@ -1,58 +1,21 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/logoin/index",
 			"style":{
 				"titleNView":false
 			}
 		}
-	    ,{
-            "path" : "pages/destination/destination",
-            "style" : {"titleNView":false}
-        }
-        ,{
-            "path" : "pages/trip/trip",
-            "style" : {"titleNView":false}
-        }
         ,{
             "path" : "pages/mine/mine",
             "style" : {"titleNView":false}
         }
+       
     ],
 	"globalStyle": {
 		
 	},
 	"tabBar": {
-	    "color": "#cdcdcd",
-	    "selectedColor": "#1296db",
-	    "borderStyle": "black",
-	    "backgroundColor": "#ffffff",
-	    "list": [
-			{
-				"pagePath": "pages/index/index",
-				"iconPath": "static/tabber/home.png",
-				"selectedIconPath": "static/tabber/home-selected.png",
-				"text": "首页"
-			},
-			{
-				"pagePath": "pages/destination/destination",
-				"iconPath": "static/tabber/position.png",
-				"selectedIconPath": "static/tabber/position-selected.png",
-				"text": "目的地"
-			},
-			{
-				"pagePath": "pages/trip/trip",
-				"iconPath": "static/tabber/trip.png",
-				"selectedIconPath": "static/tabber/trip-selected.png",
-				"text": "行程"
-			},
-			{
-				"pagePath": "pages/mine/mine",
-				"iconPath": "static/tabber/mine.png",
-				"selectedIconPath": "static/tabber/mine-selected.png",
-				"text": "我的"
-			}
-		
-		]
+	   
 	}
 }

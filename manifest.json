@@ -7,6 +7,10 @@
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
+		"background": "#CCCCCC",  
+		"bottom": {  
+		    "offset": "auto"  
+		},
         "usingComponents" : true,
         "nvueCompiler" : "uni-app",
         "compilerVersion" : 3,
