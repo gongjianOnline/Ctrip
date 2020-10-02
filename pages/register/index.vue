@@ -3,7 +3,7 @@
 		<image src="../../static/login/bgImg.png" mode="" class="bgimg"></image>
 		<image src="../../static/login/logo.png" mode="" class="logo"></image>
 		<view class="" class="title">健康饮水</view>
-		<view class="form-wrapper">s
+		<view class="form-wrapper">
 			<view class="form-tiem">
 				<view class="form-tiem-title">
 					<image src="../../static/login/me.png" mode=""></image>

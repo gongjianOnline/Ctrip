@@ -9,7 +9,7 @@
 					<image src="../../static/login/phone.png" mode=""></image>
 				</view>
 				<view class="form-tiem-input">
-					<input class="uni-input" focus placeholder="电话" v-model="phone"/>
+					<input class="uni-input" type="text" focus placeholder="电话" @confirm="getPhone"	/>
 				</view>
 			</view>
 			<view class="form-tiem">
@@ -17,7 +17,7 @@
 					<image src="../../static/login/password.png" mode=""></image>
 				</view>
 				<view class="form-tiem-input">
-					<input class="uni-input" focus placeholder="密码" v-model="paswrod"/>
+					<input class="uni-input" password type="text" placeholder="密码" v-model="paswrod" @confirm="getPaswrod"/>
 				</view>
 			</view>
 			<view class="register" @click="registeFun">注册账号</view>
@@ -47,17 +47,32 @@
 			uni.hideTabBar()
 		},
 		methods: {
+			getPhone(event){
+				this.phone = event.target.value
+				uni.hideKeyboard();
+			},
+			getPaswrod(){
+				uni.hideKeyboard();
+			},
 			registeFun(){
 				console.log("999")
 				uni.navigateTo({
 				    url: "../register/index",
 				    success: res => {},
 				    fail: () => {},
-				        complete: () => {}
-				    });
+				    complete: () => {}
+				});
 			},
 			loginFun(){
-				console.log("登录事件")
+				if(this.phone === "admin" && this.paswrod === "admin"){
+					uni.reLaunch({
+					    url: "../view/index",
+					    success: res => {},
+					    fail: () => {},
+					    complete: () => {}
+					});
+				}
+				
 			}
 		}
 	}
