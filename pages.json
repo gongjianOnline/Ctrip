@@ -11,11 +11,12 @@
             "style" : {"titleNView":false}
         }
        
+        ,{
+            "path" : "pages/register/index",
+            "style" : {"titleNView":false}
+        }
     ],
 	"globalStyle": {
 		
-	},
-	"tabBar": {
-	   
 	}
 }

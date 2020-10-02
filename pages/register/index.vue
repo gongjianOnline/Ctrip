@@ -3,7 +3,15 @@
 		<image src="../../static/login/bgImg.png" mode="" class="bgimg"></image>
 		<image src="../../static/login/logo.png" mode="" class="logo"></image>
 		<view class="" class="title">健康饮水</view>
-		<view class="form-wrapper">
+		<view class="form-wrapper">s
+			<view class="form-tiem">
+				<view class="form-tiem-title">
+					<image src="../../static/login/me.png" mode=""></image>
+				</view>
+				<view class="form-tiem-input">
+					<input class="uni-input" focus placeholder="电话" v-model="phone"/>
+				</view>
+			</view>
 			<view class="form-tiem">
 				<view class="form-tiem-title">
 					<image src="../../static/login/phone.png" mode=""></image>
@@ -20,10 +28,9 @@
 					<input class="uni-input" focus placeholder="密码" v-model="paswrod"/>
 				</view>
 			</view>
-			<view class="register" @click="registeFun">注册账号</view>
 			<view class="button-container">
 				<view class="button" @click="loginFun">
-					登录
+					注册
 				</view>
 			</view>
 		</view>
@@ -35,7 +42,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello',
+				title: '',
 				phone:"",
 				paswrod:""
 			}
@@ -48,13 +55,7 @@
 		},
 		methods: {
 			registeFun(){
-				console.log("999")
-				uni.navigateTo({
-				    url: "../register/index",
-				    success: res => {},
-				    fail: () => {},
-				        complete: () => {}
-				    });
+				console.log("注册账号")
 			},
 			loginFun(){
 				console.log("登录事件")
@@ -126,12 +127,6 @@
 		border-image: linear-gradient(to left, #63dcea, #9BA1F4) 20 20;
 		height: 46px;
 		width: 450rpx;
-	}
-	.register{
-		text-align: right;
-		width: 750rpx;
-		margin-right: 20px;
-		color: #89a5f8;
 	}
 	.button-container{
 		margin-top: 10px;
