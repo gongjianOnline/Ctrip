@@ -1,7 +1,11 @@
 <template>
-	<view class="wrapper">
-		<view class="tabBer">首页</view>
-		<view class="tabBer">我的</view>
+	<view class="tabBer-wrapper">
+		<view 	class="tabBer border-right-none"
+				:class="[IsSelected=='首页'?'selected':'']"
+				@click="selectedFun('首页')">首页</view>
+		<view 	class="tabBer"
+				:class="[IsSelected === '我的'?'selected':'']"
+				@click="selectedFun('我的')">我的</view>
 	</view>
 </template>
 
@@ -9,27 +13,37 @@
 	export default {
 		data() {
 			return {
-				
+				IsSelected:"首页"
 			}
 		},
 		methods: {
-			
+			selectedFun(name){
+				this.IsSelected = name
+			}
 		}
 	}
 </script>
 
 <style scoped>
-.wrapper{
+.tabBer-wrapper{
 	display: flex;
 	justify-content: center;
-	border: 1px solid red;
+	margin-bottom: 20px;
 }
 .tabBer{
 	width: 150rpx;
 	height: 30px;
-	border: 1px solid #007AFF;
+	border: 1px solid rgb(126,134,236);
+	border-radius: 8rpx;
+	color: #007aff;
 	text-align: center;
 	line-height: 30px;
-	
+}
+.border-right-none{
+	border-right: none;
+}
+.selected{
+	background-color: rgb(126,134,236);
+	color:#FFFFFF;
 }
 </style>

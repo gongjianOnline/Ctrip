@@ -1,14 +1,13 @@
 <template>
-	<view class="wrapper"></view>
+	<view class="top-wrapper"></view>
 </template>
 
 <script>
 </script>
 
 <style scoped>
-	.wrapper{
+	.top-wrapper{
 		width: 750rpx;
 		height: 60rpx;
-		background: black;
 	}
 </style>

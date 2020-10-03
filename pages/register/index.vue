@@ -64,7 +64,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.wrapper{
 		width: 750rpx;
 		height: 100%;

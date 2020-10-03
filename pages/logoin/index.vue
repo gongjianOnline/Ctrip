@@ -9,7 +9,12 @@
 					<image src="../../static/login/phone.png" mode=""></image>
 				</view>
 				<view class="form-tiem-input">
-					<input class="uni-input" type="text" focus placeholder="电话" @confirm="getPhone"	/>
+					<input 	class="uni-input" 
+							type="text" 
+							focus 
+							placeholder="电话"
+							@input="inputGetPhone"
+							@confirm="getPhone"	/>
 				</view>
 			</view>
 			<view class="form-tiem">
@@ -17,7 +22,12 @@
 					<image src="../../static/login/password.png" mode=""></image>
 				</view>
 				<view class="form-tiem-input">
-					<input class="uni-input" password type="text" placeholder="密码" v-model="paswrod" @confirm="getPaswrod"/>
+					<input  class="uni-input" 
+							password 
+							type="text" 
+							placeholder="密码" 
+							v-model="paswrod"  
+							@confirm="getPaswrod"/>
 				</view>
 			</view>
 			<view class="register" @click="registeFun">注册账号</view>
@@ -51,6 +61,9 @@
 				this.phone = event.target.value
 				uni.hideKeyboard();
 			},
+			inputGetPhone(event){
+				this.phone = event.target.value
+			},
 			getPaswrod(){
 				uni.hideKeyboard();
 			},
@@ -64,6 +77,7 @@
 				});
 			},
 			loginFun(){
+				console.log("asds",`电话${this.phone}`,`密码${this.paswrod}`)
 				if(this.phone === "admin" && this.paswrod === "admin"){
 					uni.reLaunch({
 					    url: "../view/index",
@@ -78,7 +92,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.wrapper{
 		width: 750rpx;
 		height: 100%;
