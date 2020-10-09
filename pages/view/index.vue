@@ -6,7 +6,7 @@
 				<image src="../../static/index/information.png" mode="" class="index-information"></image>
 			</view>
 			<view class="echarts-container">
-				
+				<indexEchar></indexEchar>
 			</view>
 			<view class="operation-container">
 				<view class="operation-item">
@@ -32,13 +32,13 @@
 		<view class="">
 			<tabBer></tabBer>
 		</view>
-		
 	</view>
 </template>
 
 <script>
 	import tabBer from "../../compenents/tabBer/tabBer.vue";
 	import top from "../../compenents/top.vue"
+	import indexEchar from "../../compenents/indexEchar/indexEchar.vue"
 	export default {
 		data() {
 			return {
@@ -47,7 +47,8 @@
 		},
 		components: {
 			tabBer,
-			top
+			top,
+			indexEchar
 		},
 		methods: {
 			
@@ -79,7 +80,7 @@
 .echarts-container{
 	width: 750rpx;
 	height: 350rpx;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 .operation-container{
 	margin-top: 35%;

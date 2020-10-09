@@ -18,7 +18,14 @@
 		},
 		methods: {
 			selectedFun(name){
-				this.IsSelected = name
+				this.IsSelected = name;
+				uni.reLaunch({
+				    url: "../mine/mine",
+				    success: res => {},
+				    fail: () => {},
+				    complete: () => {}
+				});
+				
 			}
 		}
 	}
