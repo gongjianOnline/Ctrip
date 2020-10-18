@@ -22,6 +22,9 @@
         ,{
             "path" : "pages/nearby/nearby",
             "style" : {"titleNView":false}
+        },{
+            "path" : "pages/equipmentStatus/equipmentStatus",
+            "style" : {"titleNView":false}
         }
     ],
 	"globalStyle": {

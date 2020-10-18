@@ -1,7 +1,7 @@
 <template>
 	<view class="qiun-columns">
 		<view class="qiun-charts3">
-			<canvas canvas-id="canvasArcbar1" id="canvasArcbar1" class="charts3"></canvas>
+			<canvas :canvas-id="elemId" :id="elemId" class="charts3"></canvas>
 		</view>
 	</view>
 </template>
@@ -18,9 +18,36 @@
 				cHeight3: '', //圆弧进度图
 				arcbarWidth: '', //圆弧进度图，进度条宽度,此设置可使各端宽度一致
 				pixelRatio: 1,
+				Arcbar1:{
+					series: [{
+						name: null,
+						data: null,
+						color: '#000000'
+					}]
+				}
+			}
+		},
+		props:{
+			title:{
+				type:String,
+				default:''
+			},
+			value:{
+				type:Number,
+				default:0
+			},
+			elemId:{
+				type:String,
+				default:""
+			},
+			symbol:{
+				type:String,
+				default:""
 			}
 		},
 		created() {
+			this.Arcbar1.series[0].name = this.title;
+			this.Arcbar1.series[0].data = this.value;
 			_self = this;
 			this.cWidth3 = uni.upx2px(250); //这里要与样式的宽高对应
 			this.cHeight3 = uni.upx2px(250); //这里要与样式的宽高对应
@@ -29,14 +56,7 @@
 		},
 		methods: {
 			getServerData() {
-				let Arcbar1 = {
-					series: [{
-						name: '优秀',
-						data: 0.95,
-						color: '#000000'
-					}]
-				};
-				_self.showArcbar("canvasArcbar1", Arcbar1);
+				_self.showArcbar(this.elemId, this.Arcbar1);
 			},
 			showArcbar(canvasId, chartData) {
 				console.log("调用了方法")
@@ -53,10 +73,10 @@
 					series: chartData.series,
 					animation: true,
 					width:this.cWidth3 * 1.4,
-					height: this.cHeight3 * 2,
+					height: this.cHeight3 * 1.5,
 					dataLabel: true,
 					title: {
-						name: Math.round(chartData.series[0].data * 100) + "%", //这里我自动计算了，您可以直接给任意字符串
+						name: Math.round(chartData.series[0].data * 100) + `${this.symbol}`, //这里我自动计算了，您可以直接给任意字符串
 						color: '#4b6288',
 						fontSize: 26 * _self.pixelRatio
 					},

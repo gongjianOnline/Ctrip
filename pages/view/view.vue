@@ -6,7 +6,7 @@
 				<image src="../../static/index/information.png" mode="" class="index-information"></image>
 			</view>
 			<view class="echarts-container">
-				<indexEchar></indexEchar>
+				<indexEchar title="水质" :value="0.25" elemId="echarIndex" symbol=""></indexEchar>
 			</view>
 			<view class="operation-container">
 				<view class="operation-item" @click="menuFun('nearby')">
@@ -15,13 +15,13 @@
 					</view>
 					<view class="operation-content">附近</view>
 				</view>
-				<view class="operation-item" @click="menuFun('')">
+				<view class="operation-item" @click="scanCodeFun()">
 					<view class="operation-content">
 						<image src="../../static/index/scanning.png" mode="" class="operation-img"></image>
 					</view>
 					<view class="operation-content">扫描</view>
 				</view>
-				<view class="operation-item" @click="menuFun('')">
+				<view class="operation-item" @click="menuFun('equipmentStatus')">
 					<view class="operation-content">
 						<image src="../../static/index/see.png" mode="" class="operation-img"></image>
 					</view>
@@ -58,7 +58,22 @@
 				    fail: () => {},
 				    complete: () => {}
 				});
+			},
+			scanCodeFun(){
+				uni.scanCode({
+				    onlyFromCamera: true,
+					scanType:['qrCode'],
+				    success: function (res) {
+				        console.log("调用失败")
+						console.log(res)
+				    },
+					fail:function(res){
+						console.log("调用失败")
+						console.log(res)
+					}
+				});
 			}
+			
 		}
 	}
 </script>
