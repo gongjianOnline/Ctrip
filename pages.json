@@ -16,7 +16,11 @@
             "style" : {"titleNView":false}
         }
         ,{
-            "path" : "pages/view/index",
+            "path" : "pages/view/view",
+            "style" : {"titleNView":false}
+        }
+        ,{
+            "path" : "pages/nearby/nearby",
             "style" : {"titleNView":false}
         }
     ],

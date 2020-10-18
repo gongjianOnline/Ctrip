@@ -80,7 +80,7 @@
 				console.log("asds",`电话${this.phone}`,`密码${this.paswrod}`)
 				if(this.phone === "admin" && this.paswrod === "admin"){
 					uni.reLaunch({
-					    url: "../view/index",
+					    url: "../view/view",
 					    success: res => {},
 					    fail: () => {},
 					    complete: () => {}

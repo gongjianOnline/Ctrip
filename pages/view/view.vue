@@ -9,19 +9,19 @@
 				<indexEchar></indexEchar>
 			</view>
 			<view class="operation-container">
-				<view class="operation-item">
+				<view class="operation-item" @click="menuFun('nearby')">
 					<view class="operation-content">
 						<image src="../../static/index/search.png" mode="" class="operation-img"></image>
 					</view>
 					<view class="operation-content">附近</view>
 				</view>
-				<view class="operation-item">
+				<view class="operation-item" @click="menuFun('')">
 					<view class="operation-content">
 						<image src="../../static/index/scanning.png" mode="" class="operation-img"></image>
 					</view>
 					<view class="operation-content">扫描</view>
 				</view>
-				<view class="operation-item">
+				<view class="operation-item" @click="menuFun('')">
 					<view class="operation-content">
 						<image src="../../static/index/see.png" mode="" class="operation-img"></image>
 					</view>
@@ -51,7 +51,14 @@
 			indexEchar
 		},
 		methods: {
-			
+			menuFun(routerName){
+				uni.navigateTo({
+				    url: `../${routerName}/${routerName}`,
+				    success: res => {},
+				    fail: () => {},
+				    complete: () => {}
+				});
+			}
 		}
 	}
 </script>
@@ -80,7 +87,9 @@
 .echarts-container{
 	width: 750rpx;
 	height: 350rpx;
-	/* border: 1px solid red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .operation-container{
 	margin-top: 35%;
