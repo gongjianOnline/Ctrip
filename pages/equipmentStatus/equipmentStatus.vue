@@ -16,7 +16,11 @@
 				</view>
 			</view>
 			<view class="equipmentStatus-selec-container">
-				
+				<picker @change="PickerChange" :value="index" :range="picker">
+					<view class="picker">
+						当前设备：{{picker[index]}}
+					</view>
+				</picker>
 			</view>
 		</view>
 	</view>
@@ -29,7 +33,8 @@
 	export default {
 		data() {
 			return {
-				
+				index: 0,
+				picker: ['男生宿舍A栋', '女生宿舍B栋'],
 			}
 		},
 		components: {
@@ -40,7 +45,10 @@
 		methods: {
 			confirm(e){
 				console.log(e)
-			}
+			},
+			PickerChange(e) {
+				this.index = e.detail.value
+			},
 		},
 	}
 </script>
@@ -87,8 +95,11 @@
 	}
 
 	.equipmentStatus-selec-container {
-		width: 750upx;
+		margin: 0 auto;
+		width: 450upx;
 		height: 50upx;
-		border: 1px solid red;
+		border: 1px solid rgb(25, 118, 234);
+		border-radius: 100upx;
+		text-align: center;
 	}
 </style>
