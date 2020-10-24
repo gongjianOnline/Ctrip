@@ -8,7 +8,7 @@
 					<view class="snearby-row-secondaryinfo">{{item.secondaryinfo}}</view>
 				</view>
 				<view class="snearby-row-select">
-					<view class="snearby-button">选择</view>
+					<view class="snearby-button" @click="skipFun">选择</view>
 				</view>
 			</view>
 		</scroll-view>
@@ -81,7 +81,14 @@
 			topNavigation
 		},
 		methods: {
-
+			skipFun(){
+				uni.navigateTo({
+					url:"../equipmentStatus/equipmentStatus",
+					success:()=>{
+						console.log("跳转成功")
+					}
+				})
+			}
 		}
 	}
 </script>
