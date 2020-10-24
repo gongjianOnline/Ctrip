@@ -85,7 +85,6 @@
 				uni.navigateTo({
 					url:"../equipmentStatus/equipmentStatus",
 					success:()=>{
-						console.log("跳转成功")
 					}
 				})
 			}

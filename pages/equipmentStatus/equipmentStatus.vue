@@ -1,7 +1,7 @@
 <template>
 	<view class="equipmentStatus-wrapper">
 		<view class="equipmentStatus-view-container">
-			<topNavigation title="" leftIcon="../../static/topNavigation/left.png" />
+			<topNavigation title="设备状态" leftIcon="../../static/topNavigation/left.png" />
 			<view class="equipmentStatus-determinant">
 				<view class="equipmentStatus-determinant-item">
 					<indexEchar title="剩余水量" :value="0.25" elemId="surplusAmount" symbol="%"></indexEchar>

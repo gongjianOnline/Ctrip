@@ -26,6 +26,22 @@
             "path" : "pages/equipmentStatus/equipmentStatus",
             "style" : {"titleNView":false}
         }
+        ,{
+            "path" : "pages/intercalate/intercalate",
+            "style" :                                                                                    
+            {
+                "titleNView":false
+            }
+            
+        }
+        ,{
+            "path" : "pages/userInfo/userInfo",
+            "style" :                                                                                    
+            {
+                "titleNView":false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		

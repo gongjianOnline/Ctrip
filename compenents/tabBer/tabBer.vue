@@ -16,11 +16,29 @@
 				IsSelected:"首页"
 			}
 		},
+		mounted(){
+			uni.getStorage({
+			    key: 'tabBerIndex',
+			    success:(res)=>{
+			        this.IsSelected = res.data?res.data:"首页"
+			    }
+			});
+		},
 		methods: {
 			selectedFun(name){
+				uni.setStorage({
+				    key: 'tabBerIndex',
+				    data: name,
+				});
 				this.IsSelected = name;
+				let router = "";
+				if(name === "首页"){
+					router = "view"
+				}else{
+					router = "mine"
+				}
 				uni.reLaunch({
-				    url: "../mine/mine",
+				    url: `../${router}/${router}`,
 				    success: res => {},
 				    fail: () => {},
 				    complete: () => {}

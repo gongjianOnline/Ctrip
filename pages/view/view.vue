@@ -84,6 +84,7 @@
 	flex-direction: column;
 	width: 750rpx;
 	height: 100%;
+	background: #ffffff;
 }
 .view-container{
 	flex-grow: 1;
