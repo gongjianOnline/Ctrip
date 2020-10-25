@@ -77,7 +77,10 @@
 				});
 			},
 			loginFun(){
-				console.log("asds",`电话${this.phone}`,`密码${this.paswrod}`)
+				uni.setStorage({
+				    key: 'tabBerIndex',
+				    data: "首页",
+				});
 				if(this.phone === "admin" && this.paswrod === "admin"){
 					uni.reLaunch({
 					    url: "../view/view",

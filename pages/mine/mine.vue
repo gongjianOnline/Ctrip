@@ -17,20 +17,20 @@
 			</view>
 			<view class="mine-carte-flex">
 				<view class="mine-carte-container">
-					<view class="mine-carte-conter" @click="carteFun('car')">
+					<view class="mine-carte-conter" @click="carteFun('card')">
 						<img src="../../static/mine/car.png" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">我的水卡</view>
 					</view>
-					<view class="mine-carte-conter" @click="carteFun('info')">
+					<view class="mine-carte-conter" @click="carteFun('userInfo')">
 						<img src="../../static/mine/info.png" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">个人信息</view>
 					</view>
-					<view class="mine-carte-conter" @click="carteFun('admin')">
+					<view class="mine-carte-conter" @click="carteFun('eqControl')">
 						<img src="../../static/mine/admin.png" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">设备管理</view>
 					</view>
 				</view>
-				<view class="mine-carte-container">
+				<!-- <view class="mine-carte-container">
 					<view class="mine-carte-conter" @click="carteFun('record')">
 						<img src="../../static/mine/record.png" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">打水记录</view>
@@ -43,7 +43,7 @@
 						<img src="../../static/mine/rechargeRecord.png" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">充值记录</view>
 					</view>
-				</view>
+				</view> -->
 			</view>
 		</view>
 		<view class="mine-tabBer-contaner">
@@ -70,6 +70,12 @@
 			intercalateFun(){
 				uni.navigateTo({
 					url:"../intercalate/intercalate"
+				})
+			},
+			//菜单跳转
+			carteFun(name){
+				uni.navigateTo({
+					url:`../${name}/${name}`
 				})
 			}
 		}

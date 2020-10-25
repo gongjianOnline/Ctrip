@@ -42,6 +42,22 @@
             }
             
         }
+        ,{
+            "path" : "pages/card/card",
+            "style" :                                                                                    
+            {
+                "titleNView":false
+            }
+            
+        }
+        ,{
+            "path" : "pages/eqControl/eqControl",
+            "style" :                                                                                    
+            {
+                "titleNView":false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		

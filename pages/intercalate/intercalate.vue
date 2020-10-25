@@ -14,7 +14,7 @@
 					</view>
 				</view>
 				
-				<view class="info-conter">
+				<view class="info-conter" @click="intercalateFun('card')">
 					<view class="info-conterLeft">
 						<img src="../../static/intercalate/bill.png" alt="" class="infoIcon">
 						<view class="info-title">我的校园卡</view>
