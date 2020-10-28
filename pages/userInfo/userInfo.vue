@@ -101,13 +101,12 @@
 	background: #FFFFFF;
 }
 .userInfo-view-container{
-	margin-top: 100rpx;
 	width: 750rpx;
 	height: 100%;
 }
 .userInfo-view-header{
 	width: 750rpx;
-	height: 400rpx;
+	height: 500rpx;
 	background: linear-gradient(130deg, rgba(166,196,252,1) 26%, rgba(206,195,252,1) 100%);
 	display: flex;
 	justify-content: center;
