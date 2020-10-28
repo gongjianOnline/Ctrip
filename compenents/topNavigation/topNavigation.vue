@@ -69,7 +69,7 @@
 }
 .topNavigation-imageIcon{
 	height: 60upx;
-	width: 60upx;
+	width: 80upx;
 	padding: 0 10upx;
 }
 .topNavigation-title{

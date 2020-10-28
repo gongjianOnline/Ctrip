@@ -175,8 +175,8 @@
 	align-items: center;
 }
 .userInfoIcon{
-	width: 40rpx;
-	height: 40rpx;
+	width: 60rpx;
+	height: 55rpx;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -197,8 +197,8 @@
 	height:60rpx;
 }
 .meunIcon{
-	width: 60rpx;
-	height: 60rpx;
+	width: 100%;
+	height: 100%;
 }
 
 </style>
