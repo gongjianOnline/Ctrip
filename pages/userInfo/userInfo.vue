@@ -4,11 +4,11 @@
 			<topNavigation title="个人信息" leftIcon="../../static/topNavigation/left.png" />
 			<view class="userInfo-view-header">
 				<view class="logo-container">
-					<img src="../../static/login/logo.png" alt="" class="logoIcon">
+					<image src="../../static/login/logo.png" alt="" class="logoIcon">
 					<span class="logoIcon-title">健康饮水</span>
 				</view>
 				<view class="logoUser-container">
-					<img src="../../static/mine/user_logo.png" alt="" class="userLogo">
+					<image src="../../static/mine/user_logo.png" alt="" class="userLogo">
 				</view>
 			</view>
 		</view>
@@ -20,56 +20,56 @@
 			<view class="userInfo-carte-Item">
 				<view class="userInfo-sculpture">
 					<view class="userInfoIcon">
-						<img src="../../static/userInfo/account.png" alt="" class="meunIcon">
+						<image src="../../static/userInfo/account.png" alt="" class="meunIcon">
 					</view>
 					<view class="userInfoIcon-info">292876034</view>
 				</view>
 				<view class="userInfoIcon-right">
-					<!-- <img src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon"> -->
+					<!-- <image src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon"> -->
 				</view>
 			</view>
 			<view class="userInfo-carte-Item">
 				<view class="userInfo-sculpture">
 					<view class="userInfoIcon">
-						<img src="../../static/userInfo/info.png" alt="" class="meunIcon">
+						<image src="../../static/userInfo/info.png" alt="" class="meunIcon">
 					</view>
 					<view class="userInfoIcon-info">男 22岁 水瓶座 山西-大同</view>
 				</view>
 				<view class="userInfoIcon-right">
-					<img src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon">
+					<image src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon">
 				</view>
 			</view>
 			<view class="userInfo-carte-Item">
 				<view class="userInfo-sculpture">
 					<view class="userInfoIcon">
-						<img src="../../static/userInfo/school.png" alt="" class="meunIcon">
+						<image src="../../static/userInfo/school.png" alt="" class="meunIcon">
 					</view>
 					<view class="userInfoIcon-info">廊坊职业技术学院 15数字媒体1班</view>
 				</view>
 				<view class="userInfoIcon-right">
-					<!-- <img src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon"> -->
+					<!-- <image src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon"> -->
 				</view>
 			</view>
 			<view class="userInfo-carte-Item">
 				<view class="userInfo-sculpture">
 					<view class="userInfoIcon">
-						<img src="../../static/userInfo/charts.png" alt="" class="meunIcon">
+						<image src="../../static/userInfo/charts.png" alt="" class="meunIcon">
 					</view>
 					<view class="userInfoIcon-info">打水记录</view>
 				</view>
 				<view class="userInfoIcon-right">
-					<img src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon">
+					<image src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon">
 				</view>
 			</view>
 			<view class="userInfo-carte-Item">
 				<view class="userInfo-sculpture">
 					<view class="userInfoIcon">
-						<img src="../../static/userInfo/play.png" alt="" class="meunIcon">
+						<image src="../../static/userInfo/play.png" alt="" class="meunIcon">
 					</view>
 					<view class="userInfoIcon-info">支付方式绑定</view>
 				</view>
 				<view class="userInfoIcon-right">
-					<img src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon">
+					<image src="../../static/mine/right.png" alt="" class="userInfoIcon-rightIcon">
 				</view>
 			</view>
 		</view>
@@ -123,6 +123,7 @@
 }
 .logoIcon{
 	height: 150rpx;
+	width: 120rpx;
 }
 .logoIcon-title{
 	font-size: 60rpx;

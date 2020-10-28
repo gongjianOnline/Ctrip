@@ -64,7 +64,7 @@
 	.equipmentStatus-view-container {
 		flex-grow: 1;
 		background-image: url(../../static/index/bgImg.png);
-		background-size: 750rpx 100%;
+		background-size: 750rpx;
 		background-repeat: no-repeat;
 	}
 
@@ -84,7 +84,7 @@
 	.equipmentStatus-trend-container {
 		width: 750upx;
 		height: 400upx;
-		margin-top: 130upx;
+		margin-top: 100upx;
 		display: flex;
 		align-items: center;
 	}

@@ -3,12 +3,12 @@
 		<view class="card-view-container">
 			<topNavigation title="设备状态" leftIcon="../../static/topNavigation/left.png" />
 			<view class="cardImg-contanier">
-				<img src="img" alt="" class="cardImg">
+				<image src="img" alt="" class="cardImg">
 			</view>
 			<view class="cardInfo-container">
 				<view class="cardInfo-left">
 					<view class="cardInfo-leftImg">
-						<img src="../../static/mine/user_logo.png" alt="" class="leftImg">
+						<image src="../../static/mine/user_logo.png" alt="" class="leftImg">
 					</view>
 					<view class="cardInfo-leftInfo">
 						<view>
@@ -27,7 +27,7 @@
 			<view class="cardInfo-container">
 				<view class="cardInfo-left">
 					<view class="cardInfo-leftImg">
-						<img src="../../static/mine/user_logo.png" alt="" class="leftImg">
+						<image src="../../static/mine/user_logo.png" alt="" class="leftImg">
 					</view>
 					<view class="cardInfo-leftInfo">
 						<view>
@@ -71,12 +71,13 @@
 		flex-direction: column;
 		width: 750rpx;
 		height: 100%;
+		background:#f5f6fe;
 	}
 
 	.card-view-container {
 		flex-grow: 1;
 		background-image: url(../../static/mine/backImg.png);
-		background-size: 750rpx 100%;
+		background-size: 750rpx;
 		background-repeat: no-repeat;
 	}
 	.cardImg-contanier{

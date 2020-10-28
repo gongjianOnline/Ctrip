@@ -58,8 +58,17 @@
             }
             
         }
+        ,{
+            "path" : "pages/test/test",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
-		
+		"backgroundColor":"#ffffff"
 	}
 }

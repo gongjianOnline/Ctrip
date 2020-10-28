@@ -53,7 +53,8 @@
 .tabBer-wrapper{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	padding:40upx 0;
+	background:transparent;
 }
 .tabBer{
 	width: 150rpx;

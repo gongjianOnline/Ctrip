@@ -89,7 +89,6 @@
 	.qiun-charts {
 		width: 750upx;
 		height: 400upx;
-		background-color: red;
 	}
 
 	.charts {

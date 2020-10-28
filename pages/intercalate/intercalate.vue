@@ -5,78 +5,78 @@
 			<view class="info-container">
 				<view class="info-conter" @click="intercalateFun('userInfo')">
 					<view class="info-conterLeft">
-						<img src="../../static/mine/user_logo.png" alt="" class="infoLogo">
+						<image src="../../static/mine/user_logo.png" alt="" class="infoLogo">
 						<view class="info-title">个人主页</view>
 					</view>
 					<view class="info-conterRight">
 						<span class="info-title">进入</span>
-						<img src="../../static/mine/right.png" alt="" class="rightIcon">
+						<image src="../../static/mine/right.png" alt="" class="rightIcon">
 					</view>
 				</view>
 				
 				<view class="info-conter" @click="intercalateFun('card')">
 					<view class="info-conterLeft">
-						<img src="../../static/intercalate/bill.png" alt="" class="infoIcon">
+						<image src="../../static/intercalate/bill.png" alt="" class="infoIcon">
 						<view class="info-title">我的校园卡</view>
 					</view>
 					<view class="info-conterRight">
 						<span class="info-title">2</span>
-						<img src="../../static/mine/right.png" alt="" class="rightIcon">
+						<image src="../../static/mine/right.png" alt="" class="rightIcon">
 					</view>
 				</view>
 				
 				<view class="info-conter">
 					<view class="info-conterLeft">
-						<img src="../../static/intercalate/fixing.png" alt="" class="infoIcon">
+						<image src="../../static/intercalate/fixing.png" alt="" class="infoIcon">
 						<view class="info-title">附近设备</view>
 					</view>
 					<view class="info-conterRight">
 						<span class="info-title">3</span>
-						<img src="../../static/mine/right.png" alt="" class="rightIcon">
+						<image src="../../static/mine/right.png" alt="" class="rightIcon">
 					</view>
 				</view>
 				
 				<view class="info-conter">
 					<view class="info-conterLeft">
-						<img src="../../static/intercalate/QRCode.png" alt="" class="infoIcon">
+						<image src="../../static/intercalate/QRCode.png" alt="" class="infoIcon">
 						<view class="info-title">我的二维码</view>
 					</view>
 					<view class="info-conterRight">
 						<span class="info-title"></span>
-						<img src="../../static/mine/right.png" alt="" class="rightIcon">
+						<image src="../../static/mine/right.png" alt="" class="rightIcon">
 					</view>
 				</view>
 				
 				<view class="info-conter">
 					<view class="info-conterLeft">
-						<img src="../../static/intercalate/collection.png" alt="" class="infoIcon">
+						<image src="../../static/intercalate/collection.png" alt="" class="infoIcon">
 						<view class="info-title">收藏</view>
 					</view>
 					<view class="info-conterRight">
 						<span class="info-title"></span>
-						<img src="../../static/mine/right.png" alt="" class="rightIcon">
+						<image src="../../static/mine/right.png" alt="" class="rightIcon">
 					</view>
 				</view>
 				
 				<view class="info-conter">
 					<view class="info-conterLeft">
-						<img src="../../static/intercalate/tidings.png" alt="" class="infoIcon">
+						<image src="../../static/intercalate/tidings.png" alt="" class="infoIcon">
 						<view class="info-title">我的消息</view>
 					</view>
 					<view class="info-conterRight">
 						<span class="info-title"></span>
-						<img src="../../static/mine/right.png" alt="" class="rightIcon">
+						<image src="../../static/mine/right.png" alt="" class="rightIcon">
 					</view>
 				</view>
 				
 				<view class="info-conter">
 					<view class="info-conterLeft">
-						<img src="../../static/intercalate/customService.png" alt="" class="infoIcon">
+						<image src="../../static/intercalate/customService.png" alt="" class="infoIcon">
 						<view class="info-title">联系客服</view>
 					</view>
 					<view class="info-conterRight">
 						<span class="info-title"></span>
-						<img src="../../static/mine/right.png" alt="" class="rightIcon">
+						<image src="../../static/mine/right.png" alt="" class="rightIcon">
 					</view>
 				</view>
 				
