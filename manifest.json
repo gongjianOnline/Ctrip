@@ -1,32 +1,32 @@
 {
-    "name" : "Ctrip",
+    "name" : "健康饮水",
     "appid" : "__UNI__15D1601",
     "description" : "健康饮水-静态版",
-    "versionName" : "1.0.0",
+    "versionName" : "1.1.0",
     "versionCode" : "100",
     "transformPx" : false,
-	"h5":{
-		"publicPath":"./"
-	},
+    "h5" : {
+        "router" : {
+            "mode" : "hash"
+        },
+        "devServer" : {
+            "https" : false
+        }
+    },
     /* 5+App特有相关 */
     "app-plus" : {
-<<<<<<< HEAD
         "background" : "#CCCCCC",
         "bottom" : {
             "offset" : "auto"
         },
-=======
-		"background": "#CCCCCC",  
-		"bottom": {  
-		    "offset": "auto"  
-		},
-		"left": {    // 左侧安全区域配置（横屏显示时有效）  
-		    "offset":"none|auto"  
-		},  
-		"right": {    // 右侧安全区域配置（横屏显示时有效）  
-			"offset":"none|auto"  
-		},
->>>>>>> b85efb5462ecefd49b9224f1dc76b0be016f82e4
+        "left" : {
+            // 左侧安全区域配置（横屏显示时有效）  
+            "offset" : "none|auto"
+        },
+        "right" : {
+            // 右侧安全区域配置（横屏显示时有效）  
+            "offset" : "none|auto"
+        },
         "usingComponents" : true,
         "nvueCompiler" : "uni-app",
         "compilerVersion" : 3,
@@ -84,15 +84,17 @@
             "splashscreen" : {
                 "androidStyle" : "default",
                 "android" : {
-                    "xxhdpi" : "C:/Users/programmer/Desktop/Lark20201025-192339.png"
+                    "xxhdpi" : "C:/Users/programmer/Desktop/健康饮水/start/start.png",
+                    "xhdpi" : "C:/Users/programmer/Desktop/健康饮水/start/720.png",
+                    "hdpi" : "C:/Users/programmer/Desktop/健康饮水/start/480.png"
                 }
             },
             "icons" : {
                 "android" : {
-                    "hdpi" : "C:/Users/programmer/Desktop/72.png",
-                    "xhdpi" : "C:/Users/programmer/Desktop/96.png",
-                    "xxhdpi" : "C:/Users/programmer/Desktop/144.png",
-                    "xxxhdpi" : "C:/Users/programmer/Desktop/192.png"
+                    "hdpi" : "C:/Users/programmer/Desktop/健康饮水/logo/72.png",
+                    "xhdpi" : "C:/Users/programmer/Desktop/健康饮水/logo/96.png",
+                    "xxhdpi" : "C:/Users/programmer/Desktop/健康饮水/logo/144.png",
+                    "xxxhdpi" : "C:/Users/programmer/Desktop/健康饮水/logo/192.png"
                 }
             }
         }
@@ -118,13 +120,5 @@
     },
     "uniStatistics" : {
         "enable" : false
-    },
-    "h5" : {
-        "router" : {
-            "mode" : "hash"
-        },
-        "devServer" : {
-            "https" : false
-        }
     }
 }

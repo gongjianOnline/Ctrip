@@ -117,7 +117,7 @@
 	background: #FFFFFF;
 }
 .info-container{
-	margin-top: 100rpx;
+	margin-top: 140upx;
 	width: 750rpx;
 	height: 750rpx;
 }
