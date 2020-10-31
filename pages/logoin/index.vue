@@ -81,7 +81,7 @@
 				    key: 'tabBerIndex',
 				    data: "首页",
 				});
-				if(this.phone === "admin" && this.paswrod === "admin"){
+				if(this.phone === "" && this.paswrod === ""){
 					uni.reLaunch({
 					    url: "../view/view",
 					    success: res => {},
@@ -100,12 +100,11 @@
 		width: 750rpx;
 		height: 100%;
 		background: #f5f6fe;
-		position: relative;
-		
+		position: relative;	
 	}
 	.bgimg{
 		width: 750rpx;
-		height: 90%;
+		height: 100%;
 	}
 	.logo{
 		position: absolute;

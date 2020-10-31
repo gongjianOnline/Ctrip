@@ -18,15 +18,15 @@
 			<view class="mine-carte-flex">
 				<view class="mine-carte-container">
 					<view class="mine-carte-conter" @click="carteFun('card')">
-						<img src="../../static/mine/car.png" alt="" class="mine-carte-img">
+						<image :src="require('../../static/mine/car.png')" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">我的水卡</view>
 					</view>
 					<view class="mine-carte-conter" @click="carteFun('userInfo')">
-						<img src="../../static/mine/info.png" alt="" class="mine-carte-img">
+						<image src="../../static/mine/info.png" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">个人信息</view>
 					</view>
 					<view class="mine-carte-conter" @click="carteFun('eqControl')">
-						<img src="../../static/mine/admin.png" alt="" class="mine-carte-img">
+						<image src="../../static/mine/admin.png" alt="" class="mine-carte-img">
 						<view class="mine-carte-title">设备管理</view>
 					</view>
 				</view>
@@ -97,7 +97,7 @@
 	background-repeat: no-repeat;
 }
 .mine-tabBer-contaner{
-	padding: 20px 0 ;
+	/* padding: 20px 0 ; */
 }
 .mine-container-information{
 	text-align: right;
@@ -143,7 +143,8 @@
 	text-align: center;
 }
 .mine-carte-img{
-	height: 80rpx;
+	width: 80upx;
+	height: 78upx;
 }
 .mine-carte-title{
 	font-size: 30rpx;

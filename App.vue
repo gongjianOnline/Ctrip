@@ -18,7 +18,8 @@
 	@import "common/colorui/icon.css";
 	/*每个页面公共css */
 	page {
-	  height: 100%;
+		height: 100%;
+		background: #FFFFFF;
 	}
 	.uni-input-placeholder,.uni-input-input{
 		padding-left: 10px;

@@ -43,7 +43,7 @@
 
 <style>
 .eqControl-eqList-container{
-	margin-top: 100rpx;
+	margin-top: 140rpx;
 	padding: 10rpx 10rpx;
 }
 .eqControl-Item{

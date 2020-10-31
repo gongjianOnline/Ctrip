@@ -53,7 +53,7 @@
 <style scoped>
 .topNavigation-wrapper{
 	width: 750upx;
-	height: 100upx;
+	height: 100+var(--status-bar-height)+"upx";
 	background: linear-gradient(0.45turn, #9BA1F4, #63dcea);
 	display: flex;
 	justify-content: space-between;
@@ -61,6 +61,8 @@
 	left: 0px;
 	top: 0px;
 	z-index: 1;
+	padding-top:var(--status-bar-height);
+	padding-bottom: 14upx;
 }
 .topNavigation-imag-content{
 	display: flex;
@@ -69,7 +71,7 @@
 }
 .topNavigation-imageIcon{
 	height: 60upx;
-	width: 60upx;
+	width: 80upx;
 	padding: 0 10upx;
 }
 .topNavigation-title{

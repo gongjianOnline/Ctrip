@@ -108,15 +108,19 @@
 	align-items: center;
 }
 .operation-container{
-	margin-top: 35%;
+	margin-top: 310upx;
 	width: 750rpx;
-	height: 200rpx;
+	height: 240rpx;
 	display: flex;	
 	justify-content:space-around;
+	align-items: center;
 }
 .operation-item{
 	width:33.333%;
 	height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .operation-img{
 	width: 110rpx;
